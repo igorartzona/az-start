@@ -24,12 +24,13 @@ Images License: GNU General Public License v2 or later
 
 // 1. Подключаем susy
 @import "../../node_modules/susy/sass/susy"; 
+@import "../../node_modules/modularscale-sass/stylesheets/modularscale"; 
 
 // 2. Подключаем настройки
 @import "settings/susy-variables"; 
 
 
-@include susy-media($desktop) {
+@include susy-media($container-width) {
 
     body{
         background:red;

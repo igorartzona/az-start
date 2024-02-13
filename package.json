@@ -3,6 +3,7 @@
 	"title": "az-start",
 	"version": "0.0.1",
 	"devDependencies": {
+		"modularscale-sass": "^3.0.10",
 		"sass-loader": "^14.1.0",
 		"susy": "^2.2.14"
 	}

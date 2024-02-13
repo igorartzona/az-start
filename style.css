@@ -23,6 +23,6 @@ Images License: GNU General Public License v2 or later
 */
 /* = SETTINGS = */
 /* переменные для susy */
-@media (min-width: 768px) {
+@media (min-width: 129.7463378906em) {
   body {
     background: red; } }
