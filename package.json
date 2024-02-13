@@ -2,9 +2,8 @@
 	"name": "az-start",
 	"title": "az-start",
 	"version": "0.0.1",
-
 	"devDependencies": {
-		"susy": "2.2.14"
+		"sass-loader": "^14.1.0",
+		"susy": "^2.2.14"
 	}
-
 }

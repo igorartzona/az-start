@@ -1,0 +1,19 @@
+/* = SETTINGS = */
+
+/* переменные для susy */
+$desktop:           768px;
+$handheld:          568px;
+$container-width:   ms(12);
+
+$susy: (
+	columns: 12,
+	gutters: 1/8,
+	math: fluid,
+	output: float,
+	gutter-position: after,
+
+	use-custom: (
+		box-sizing: false
+	)
+);
+
