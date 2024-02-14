@@ -17,17 +17,18 @@ Modular scale - https://github.com/modularscale/modularscale-sass
 */
 
 // 1. Подключаем susy
-@import "../../node_modules/susy/sass/susy"; 
-@import "../../node_modules/modularscale-sass/stylesheets/modularscale"; 
+@import "../../node_modules/susy/sass/susy";
+@import "../../node_modules/modularscale-sass/stylesheets/modularscale";
 
 // 2. Подключаем настройки
-@import "settings/susy-variables"; 
+@import "settings/susy-variables";
 
 
-@include susy-media($container-width) {
+@include susy-media($desktop) {
 
     body{
-        background:red;
+        background:blue;
+		font-size: 2em;
     }
 
 }

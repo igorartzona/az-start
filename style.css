@@ -17,6 +17,9 @@ Modular scale - https://github.com/modularscale/modularscale-sass
 */
 /* = SETTINGS = */
 /* переменные для susy */
-@media (min-width: 129.7463378906em) {
+@media (min-width: 768px) {
   body {
-    background: red; } }
+    background: blue;
+    font-size: 2em;
+  }
+}
