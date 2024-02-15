@@ -24,4 +24,4 @@ jobs:
           server: ${{ env.SERVER_HOST}}
           username: ${{ env.SERVER_USER }}
           password: ${{ env.SERVER_PSW }}
-          server-dir: ${{ env.SERVER_PATH }}
+          server-dir: ${{ env.SERVER_PATH }}/
