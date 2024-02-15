@@ -1,9 +1,9 @@
 name: Beget Deploy
 
 on:
-  
+
   push:
-    branches: [ "main" ] 
+    branches: [ "workflow" ]
     workflow_dispatch:
 
 env:
@@ -22,7 +22,7 @@ jobs:
         with:
           key: "${{ secrets.BEGET }}"
           known_hosts: "just-a-placeholder-so-we-dont-get-errors"
-          
+
       - name: Generate auth hosts
         run: ssh-keyscan -H ${{ env.SERVER_HOST }} >> ~/.ssh/known_hosts
 

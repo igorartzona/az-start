@@ -5,7 +5,7 @@
 
     "scripts": {
         "editorconfig": "editorconfig-checker",
-        "test":"npm run editorconfig"
+        "test": "npm run editorconfig"
     },
 
     "devDependencies": {
