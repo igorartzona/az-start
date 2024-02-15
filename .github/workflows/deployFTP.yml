@@ -1,0 +1,27 @@
+name: FTP Deploy
+
+on:
+
+  push:
+    branches: [ "workflow" ]
+
+env:
+  SERVER_HOST: "${{ secrets.REMOTE_DEV_SERVER }}"
+  SERVER_USER: "${{ secrets.REMOTE_DEV_USER }}"
+  SERVER_PATH: "${{ secrets.REMOTE_DEV_PATH }}"
+  SERVER_PSW: "${{ secrets.REMOTE_DEV_PSW }}"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # Install ssh key
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ env.SERVER_HOST}}
+          username: ${{ env.SERVER_USER }}
+          password: ${{ env.SERVER_PSW }}
+          server-dir: ${{ env.SERVER_PATH }}
