@@ -3,7 +3,7 @@ name: Beget Deploy
 on:
 
   push:
-    branches: [ "main" ]
+    branches: [ "workflow" ]
     workflow_dispatch:
 
 env:
@@ -20,7 +20,7 @@ jobs:
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2.3.1
         with:
-          key: "${{ secrets.BEGET }}"
+          key: "${{ secrets.BEGET_SSH }}"
           known_hosts: "just-a-placeholder-so-we-dont-get-errors"
 
       - name: Generate auth hosts
