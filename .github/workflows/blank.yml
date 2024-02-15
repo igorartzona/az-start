@@ -7,9 +7,9 @@ on:
     workflow_dispatch:
 
 env:
-  SERVER_HOST: igorjvv2.beget.tech
-  SERVER_USER: azstart
-  SERVER_PATH: igorjvv2.beget.tech:/public_html/igorwoo/wp-content/themes/az-start
+  SERVER_HOST: "${{ secrets.REMOTE_DEV_SERVER }}"
+  SERVER_USER: "${{ secrets.REMOTE_DEV_USER }}"
+  SERVER_PATH: "${{ secrets.REMOTE_DEV_PATH }}"
 
 jobs:
   deploy:
