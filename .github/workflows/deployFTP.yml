@@ -19,7 +19,7 @@ jobs:
 
       # Install ssh key
       - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ env.SERVER_HOST}}
           username: ${{ env.SERVER_USER }}
