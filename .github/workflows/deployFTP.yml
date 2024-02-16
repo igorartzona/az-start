@@ -17,11 +17,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Install ssh key
+      # FTP Deploy
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ env.SERVER_HOST}}
           username: ${{ env.SERVER_USER }}
           password: ${{ env.SERVER_PSW }}
-          server-dir: ${{ env.SERVER_PATH }}/
+          server-dir: /
